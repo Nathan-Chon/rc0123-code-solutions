@@ -17,8 +17,8 @@ form {
   font-weight: 500;
 }
 
-.dropdown {
-  color: #f3f3f3;
+select {
+  background-color: #f3f3f3;
 }
 
 .topinfo {
