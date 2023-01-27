@@ -21,13 +21,6 @@ select {
   background-color: #f3f3f3;
 }
 
-.topinfo {
-  text-transform: uppercase;
-  font-size: 14px;
-  display: flex;
-  padding-left: 10px;
-}
-
 input,
 select {
   border-radius: 7px;
@@ -37,10 +30,7 @@ select {
   margin-bottom: 15px;
   border-width: 0.1px;
   border-color: #a6aaa9;
-}
-
-input::placeholder {
-  padding: 10px;
+  padding-left: 10px;
 }
 
 button {
@@ -59,4 +49,11 @@ fieldset {
 
 .submit {
   text-align: end;
+}
+
+.topinfo {
+  text-transform: uppercase;
+  font-size: 14px;
+  display: flex;
+  padding-left: 10px;
 }
