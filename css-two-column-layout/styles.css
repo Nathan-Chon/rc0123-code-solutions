@@ -12,11 +12,10 @@
 .column-one {
   flex-basis: 100%;
   text-align: center;
-  max-width: 800px;
   margin: 50px;
 }
 
-.column-two {
+.column-half {
   flex-basis: 50%;
   display: flex;
   line-height: 20px;
