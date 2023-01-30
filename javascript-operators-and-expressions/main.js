@@ -33,6 +33,7 @@ var isSparata = headCount === 300;
 console.log('value of isSparata:', isSparata);
 console.log('typeof isSparta:', typeof isSparata);
 
-var motto = fullName + ' is the GOAT!';
+var motto = fullName;
+motto += ' is the GOAT';
 console.log('value of motto:', motto);
 console.log('typeof motto:', typeof motto);
