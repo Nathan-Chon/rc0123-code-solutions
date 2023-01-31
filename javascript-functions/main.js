@@ -1,6 +1,6 @@
 function convertMinutesToSeconds(minutes) {
-  var convert = minutes * 60;
-  return convert;
+  var seconds = minutes * 60;
+  return seconds;
 }
 
 var convertMinutesToSecondsResult = convertMinutesToSeconds(5);
@@ -22,12 +22,9 @@ function getArea(width, height) {
 var getAreaResult = getArea(17, 42);
 console.log('getAreaResult:', getAreaResult);
 
-function getFirstName({ firstName, lastName }) {
-  var obj = {
-    firstName,
-    lastName
-  };
-  return obj.firstName;
+function getFirstName(person) {
+  var firstName = person.firstName;
+  return firstName;
 }
 
 var getFirstNameResult = getFirstName({ firstName: 'Nathan', lastName: 'Chon' });
