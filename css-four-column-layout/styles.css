@@ -1,0 +1,28 @@
+.container {
+  flex-wrap: wrap;
+  font-family: Barlow, sans-serif;
+  background-color: white;
+}
+
+.row {
+  display: flex;
+  margin: 0 10vw;
+}
+
+.col-full {
+  flex-basis: 100%;
+  text-align: center;
+}
+
+.col-quarter {
+  flex-basis: 25%;
+  text-align: center;
+}
+
+.phone-image {
+  width: 75%;
+}
+
+.icon-adjust {
+  width: 25%;
+}
