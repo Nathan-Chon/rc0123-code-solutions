@@ -1,0 +1,41 @@
+.container {
+  flex-wrap: wrap;
+  background-color: white;
+  font-family: "DM Sans", sans-serif;
+}
+
+.row {
+  display: flex;
+  margin: 0 10vw;
+}
+
+.col-full {
+  flex-basis: 100%;
+  text-align: center;
+}
+
+.col-fifth {
+  flex-basis: 20%;
+  align-content: center;
+}
+
+img {
+  width: 15vw;
+  height: 20vw;
+  object-fit: contain;
+}
+
+.item-name,
+.price {
+  font-weight: 800;
+}
+
+span,
+del {
+  color: #dadada;
+}
+
+.price {
+  margin-top: -0.05vw;
+  color: #372916;
+}
