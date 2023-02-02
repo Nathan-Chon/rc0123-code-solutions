@@ -232,3 +232,33 @@ h3 {
 }
 
 /* ^footeer */
+
+.image-implementation {
+  width: auto;
+  height: 50vw;
+  background-image: url("images/implementation/implementation-header.jpg");
+  background-size: cover;
+  position: relative;
+  margin: 8rem 5rem;
+}
+
+.primary-impl {
+  color: white;
+  position: absolute;
+  top: 10vw;
+  left: 5vw;
+  right: 40vw;
+  font-size: 3vw;
+  font-weight: 300;
+}
+
+.pri-para-impl {
+  color: white;
+  position: absolute;
+  top: 23vw;
+  right: 40vw;
+  left: 5vw;
+  line-height: 1.5;
+  font-family: Avenir, sans-serif;
+  font-size: 1.5vw;
+}
