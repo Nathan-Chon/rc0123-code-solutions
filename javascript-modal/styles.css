@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+.hidden {
+  display: none;
+}
+
+.row {
+  display: flex;
+}
+
+.button-first {
+  background-color: #4a4ae9;
+  color: white;
+  border-radius: 2px;
+  border: 1px solid transparent;
+  padding: 5px 20px;
+}
+
+.button-second {
+  background-color: #eb5d5d;
+  color: white;
+  border-radius: 2px;
+  border: 1px solid transparent;
+  padding: 5px 20px;
+  margin-top: 2vw;
+}
+
+.col-full {
+  flex-basis: 100%;
+  text-align: center;
+  height: auto;
+  padding: 4vw;
+  margin: 12vw 30vw;
+  box-shadow: 100px 100px 100px 100vw black;
+  opacity: 0.7;
+  border-radius: 3px;
+}
+
+.heading {
+  font-family: Calibri, "Trebuchet MS", sans-serif;
+  font-size: 2vw;
+  color: black;
+}
