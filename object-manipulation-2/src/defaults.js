@@ -1,5 +1,8 @@
 /* exported defaults */
 function defaults(target, source) {
-  var combine = Object.assign(target, source);
-  return combine;
+  for (var key in source) {
+    if (typeof target[key] === 'undefined') {
+      target[key] = source[key];
+    }
+  }
 }
