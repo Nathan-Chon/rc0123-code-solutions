@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  margin-top: 15vw;
+}
+
+.hide-1 {
+  display: none;
+}
+
+.hide {
+  display: none;
+}
+
+.row-1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 15vw;
+}
+
+.color-change-1 {
+  border-radius: 50%;
+  padding: 7vw;
+  background-color: #252525;
+  box-shadow: 0 -10px 0 10px black, 100px 100px 100px 100vw #111;
+  opacity: 0.9;
+}
+
+.color-change-2 {
+  border-radius: 50%;
+  padding: 7vw;
+  background-color: #faea84;
+  box-shadow: 0 -10px 0 10px #fef6d5, 100px 100px 100px 100vw #fef9f1;
+  opacity: 0.9;
+}
