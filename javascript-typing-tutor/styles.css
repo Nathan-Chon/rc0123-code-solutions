@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  margin: 12vw 5vw;
+}
+
+.quote {
+  color: black;
+}
