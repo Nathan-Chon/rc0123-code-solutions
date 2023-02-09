@@ -11,3 +11,11 @@
 .quote {
   color: black;
 }
+
+.correct {
+  color: green;
+}
+
+.incorrect {
+  color: red;
+}
