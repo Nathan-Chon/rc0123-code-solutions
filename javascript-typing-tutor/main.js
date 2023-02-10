@@ -1,6 +1,12 @@
 var currentIndex = 0;
 var $quote = document.querySelectorAll('span');
-var counter = $quote.childNode(currentIndex);
 document.addEventListener('keydown', function (event) {
-  return counter;
+  var $tracker = $quote.item(currentIndex);
+  event.preventDefault();
+  if ($tracker.innerText === event.key) {
+    $tracker.setAttribute('class', 'correct');
+    currentIndex++;
+  } else {
+    $tracker.setAttribute('class', 'incorrect');
+  }
 });
