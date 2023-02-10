@@ -15,13 +15,13 @@ var array = [
     author: 'Cressida Cowell'
   }
 ];
-console.log(array, typeof array);
+console.log('array:', array, 'typeof array:', typeof array);
 
 var jArray = JSON.stringify(array);
-console.log(jArray, typeof jArray);
+console.log('jArray:', jArray, 'typeof jArray:', typeof jArray);
 
 var string = '{"number":12382,"id":"23NTU4357","String name":"Nathan Chon"}';
-console.log(string);
+console.log('string:', string, 'typeof string:', typeof string);
 
 var jString = JSON.parse(string);
-console.log(jString, typeof jString);
+console.log('jString:', jString, 'typeof jString:', typeof jString);
