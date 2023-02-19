@@ -18,6 +18,10 @@
   flex-basis: 25%;
 }
 
+.col-third {
+  flex-basis: calc(100%/3);
+}
+
 /* ^columns */
 
 .navbar {
@@ -291,4 +295,110 @@ li > span {
   font-size: 1.3vw;
   line-height: 1.75;
   margin: 0 6vw;
+}
+
+.primary-about {
+  color: white;
+  position: absolute;
+  top: 10vw;
+  left: 5vw;
+  right: 40vw;
+  font-size: 3vw;
+}
+
+.pri-para-about {
+  color: white;
+  position: absolute;
+  top: 20vw;
+  right: 40vw;
+  left: 5vw;
+  line-height: 1.5;
+  font-family: Avenir, sans-serif;
+  font-size: 1.5vw;
+}
+
+.believe-para,
+.story-info {
+  line-height: 1.5;
+  margin: 2vw 20vw;
+  font-family: Avenir, sans-serif;
+}
+
+.believe-header {
+  text-align: center;
+  font-family: "Tiempos Headline", sans-serif;
+  font-weight: 400;
+}
+
+.blue-text {
+  color: #073f63;
+  font-weight: 800;
+}
+
+.team-img {
+  width: 100%;
+  padding: 0 7vw;
+  border-radius: 50%;
+  margin: 2vw 0;
+}
+
+.team-title {
+  text-align: center;
+  font-family: "Tiempos Headline", sans-serif;
+  font-weight: 400;
+}
+
+.team-info {
+  text-align: center;
+  font-size: small;
+  font-family: Avenir, sans-serif;
+  margin: -1vw 5vw 2vw;
+}
+
+.offset2 {
+  background-color: rgb(243 240 240);
+}
+
+.team,
+.story {
+  text-align: center;
+  font-family: "Tiempos Headline", sans-serif;
+  font-weight: 400;
+  margin-top: 6vw;
+}
+
+.advisory-title {
+  text-align: center;
+  font-family: "Tiempos Headline", sans-serif;
+  font-weight: 400;
+  margin-top: 5vw;
+}
+
+.advisory-info {
+  text-align: center;
+  font-family: Avenir, sans-serif;
+  font-size: small;
+  margin: 3vw 5vw;
+}
+
+.bottom-info {
+  margin-bottom: 10vw;
+}
+
+.story-info {
+  margin-top: -2vw;
+  margin-bottom: 4vw;
+}
+
+.story {
+  margin-bottom: 4vw;
+}
+
+.image-hero-about {
+  width: auto;
+  height: 50vw;
+  background-image: url("images/about-us/about-us-header.jpg");
+  background-size: cover;
+  position: relative;
+  margin: 8rem 5rem;
 }
