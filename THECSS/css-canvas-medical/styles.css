@@ -166,6 +166,8 @@
   background-color: #073f63;
   border-color: transparent;
   border-radius: 3px;
+  text-decoration: none;
+  font-family: Avenir, sans-serif;
 }
 
 .contact:hover,
@@ -401,4 +403,83 @@ li > span {
   background-size: cover;
   position: relative;
   margin: 8rem 5rem;
+}
+
+.input-info {
+  border-top: hidden;
+  border-left: hidden;
+  border-right: hidden;
+  padding: 1vw 7vw;
+  font-size: larger;
+  margin: 2vw 0;
+  text-align: center;
+  border-bottom: 1px solid;
+}
+
+.input-info::placeholder {
+  color: lightgray;
+}
+
+.input-info:focus {
+  outline: none;
+}
+
+.title-contact {
+  font-family: "Tiempos Headline", sans-serif;
+  font-weight: 400;
+  color: #525351;
+  margin: 15vw 7vw 2vw;
+}
+
+.number-contact {
+  font-family: avenir, sans-serif;
+  font-weight: 400;
+  color: #073f63;
+  margin: 0 7vw 2vw;
+}
+
+.info-contact {
+  font-family: Avenir, sans-serif;
+  font-size: 1.7vw;
+  margin: 0 9vw 0 7vw;
+}
+
+.form-align {
+  text-align: center;
+}
+
+.input-textarea {
+  border-top: hidden;
+  border-left: hidden;
+  border-right: hidden;
+  width: 67%;
+  font-size: larger;
+  text-align: center;
+  margin-top: 2vw;
+  padding: 1vw;
+}
+
+.input-textarea::placeholder {
+  color: lightgray;
+}
+
+.contact-button {
+  padding: 8px 12px;
+  color: white;
+  background-color: #073f63;
+  border-color: transparent;
+  border-radius: 3px;
+}
+
+.contact-button-align {
+  margin-top: 2vw;
+  margin-bottom: 6vw;
+}
+
+.input-align {
+  margin-top: 15vw;
+}
+
+.contact-border {
+  outline: 1px solid lightgrey;
 }
