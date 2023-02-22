@@ -1,12 +1,13 @@
 function ExampleConstructor() {
 }
 
-console.log('value of prototype:', Object.getPrototypeOf(ExampleConstructor));
-console.log('typeof prototype:', typeof Object.getPrototypeOf(ExampleConstructor));
+console.log('value of prototype:', ExampleConstructor.prototype);
+console.log('typeof prototype:', typeof ExampleConstructor.prototype);
 
-var afunction = new ExampleConstructor();
-console.log('value of afunction', afunction);
+var anObject = new ExampleConstructor();
+console.log('value of anObject', anObject);
+console.log('typeof of anObject', typeof anObject);
 
-var instance = afunction instanceof ExampleConstructor;
+var instance = anObject instanceof ExampleConstructor;
 
 console.log('value of instance', instance);
