@@ -32,7 +32,7 @@
 
 .navbar-left {
   float: left;
-  padding: 4px 16px;
+  padding: 0 16px;
   margin-left: 4rem;
   font-size: 40px;
   text-decoration: none;
@@ -44,7 +44,7 @@
   float: right;
   padding: 14px 16px;
   margin-right: 4rem;
-  margin-top: auto;
+  margin-top: 6px;
   margin-bottom: auto;
 }
 
@@ -89,6 +89,7 @@
   border-color: transparent;
   border-radius: 3px;
   text-decoration: none;
+  font-family: Avenir, sans-serif;
 }
 
 .contact:hover,
