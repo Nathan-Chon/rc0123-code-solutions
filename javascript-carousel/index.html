@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Carousel</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="control">
+      <i class="fa-solid fa-chevron-left fa-2x next larrow"></i>
+    </div>
+    <div class="images-container">
+      <img src="images/001.png" class="image" data-view="0">
+      <img src="images/004.png" class="image hidden" data-view="1">
+      <img src="images/007.png" class="image hidden" data-view="2">
+      <img src="images/025.png" class="image hidden" data-view="3">
+      <img src="images/039.png" class="image hidden" data-view="4">
+    </div>
+    <div class="control">
+      <i class="fa-solid fa-chevron-right fa-2x next rarrow"></i>
+    </div>
+    <div class="progress-bubbles">
+      <i class="fas fa-circle circle" data-view="0"></i>
+      <i class="far fa-circle circle" data-view="1"></i>
+      <i class="far fa-circle circle" data-view="2"></i>
+      <i class="far fa-circle circle" data-view="3"></i>
+      <i class="far fa-circle circle" data-view="4"></i>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>

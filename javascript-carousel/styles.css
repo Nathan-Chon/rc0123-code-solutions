@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: rgb(245 236 236);
+}
+
+i {
+  color: rgb(1 159 239);
+}
+
+.hidden {
+  display: none;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  max-width: 900px;
+  margin: 2rem auto;
+}
+
+.control {
+  width: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image {
+  width: 100%;
+  height: 550px;
+  object-fit: contain;
+  object-position: center;
+}
+
+.image-container {
+  width: 90%;
+  padding: 2.5rem 1rem;
+  border: 1px solid rgb(128 128 128);
+  border-radius: 0.5rem;
+  background-color: white;
+}
+
+.progress-bubbles {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  right: 6.5vw;
+  bottom: 0;
+  width: 100%;
+}
+
+.progress-bubbles > i {
+  margin: 0 0.5rem;
+}
+
+.progress-bubbles > i:hover,
+.carousel-control .next:hover,
+.carousel-control .previous:hover {
+  cursor: pointer;
+}
