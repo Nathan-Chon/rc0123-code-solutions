@@ -23,16 +23,12 @@ const grades = {
 
 const app = express();
 
-const array = [];
-
-app.use((req, res, next) => {
-
-  array.push(grades[12]);
-  array.push(grades[47]);
-  array.push(grades[273]);
-
+app.get('/api/grades', (req, res) => {
+  const array = [];
+  for (const key in grades) {
+    array.push(grades[key]);
+  }
   res.json(array);
-  next();
 });
 
 app.listen(8080, () => {
