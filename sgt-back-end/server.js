@@ -116,36 +116,21 @@ app.put('/api/grades/:gradeId', async (req, res) => {
       res.status(400).json({ error: 'Invalid content field' });
       return;
     }
-    const sql = `
-      select *
-        from "grades"
-      where "gradeId" = $1
-    `;
-    const params = [gradeId];
-    const result = await db.query(sql, params)
-    const grade = result.rows[0];
 
-    const sq = `
+    const sql = `
       update "grades"
         set "course" = $1,
             "name" = $2,
             "score" = $3
-      where "gradeId" = $4;
+      where "gradeId" = $4
+      returning *;
     `;
-
-    const param = [course, name, score, gradeId];
-    const resul = await db.query(sq, param);
-
+    const params = [course, name, score, gradeId];
+    const result = await db.query(sql, params);
+    const grade = result.rows[0]
 
     if (grade) {
-      const sql = `
-      select *
-        from "grades"
-      where "gradeId" = $1
-    `;
-      const params = [gradeId];
-      const result = await db.query(sql, params)
-      const grade = result.rows[0];
+
       res.json(grade);
     } else {
       res.status(404).json({ error: `Cannot find grade with "gradeId" ${gradeId}` });
@@ -159,7 +144,25 @@ app.put('/api/grades/:gradeId', async (req, res) => {
 
 app.delete('/api/grades/:gradeId', async (req, res) => {
   try {
-
+    const gradeId = Number(req.params.gradeId);
+    if (!Number.isInteger(gradeId) || gradeId <= 0) {
+      res.status(400).json({ error: '"gradeId" must be a positive integer' });
+      return;
+    }
+    const sql = `
+      delete
+      from "grades"
+      where "gradeId" = $1
+      returning *;
+    `;
+    const params = [gradeId];
+    const result = await db.query(sql, params)
+    const grade = result.rows[0];
+    if (grade) {
+      res.status(204).json(grade);
+    } else {
+      res.status(404).json({ error: `Cannot find grade with "gradeId" ${gradeId}` });
+    }
   } catch (err) {
     console.log(err);
     res.status(500).json({ error: 'An unexpected error occurred.' });
