@@ -1,0 +1,12 @@
+.titles {
+  border: 1px solid black;
+  width: 400px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.description {
+  border: 1px solid black;
+  width: 400px;
+  margin: 0 auto;
+}
