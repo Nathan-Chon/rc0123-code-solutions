@@ -1,0 +1,13 @@
+.right {
+  position: absolute;
+  top: 15vw;
+}
+
+.left {
+  position: absolute;
+  top: 15vw;
+}
+
+.picture {
+  padding: 40px;
+}
